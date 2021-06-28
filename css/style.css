@@ -63,14 +63,14 @@ blockquote {
 }
 
 nav {
-      float:left;
-      display: flex;
-      flex-wrap:wrap;
-      flex-direction: column;
-      width:14rem;
-      border:.0625rem solid #333;
-      background-color:#8FB0D0;
-      position:fixed;
+    float:left;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    width:14rem;
+    border:.0625rem solid #333;
+    background-color:#8FB0D0;
+    position:fixed;
 }
 
 nav img {
@@ -120,7 +120,7 @@ nav :nth-child(2) {
 }
 
 nav a:hover {
-  color:#FFF;
+    color:#FFF;
     background-color:#333;
 }
 
@@ -168,8 +168,8 @@ figure {
 }
 
 figure img {
-  width: 100%;
-  margin:0;   
+    width: 100%;
+    margin:0;   
 }
 
 figcaption {
@@ -195,11 +195,11 @@ figure iframe {
 /* || Written Content */
 
 article {
-  margin:0;
+    margin:0;
 }
 
 article>p {
-  margin-top:0;
+    margin-top:0;
 }
 
 article>p>a {
@@ -228,8 +228,8 @@ footer a {
 
 article p a:hover,
 footer a:hover {
-  text-decoration:none;
-  color:#495F83;
+    text-decoration:none;
+    color:#495F83;
 }
 
 .return {
