@@ -1,7 +1,6 @@
-really helpful explain about the row span and coloum span 
-view-source:https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col //talks about col and the span="2"
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
 
-then talk about scope
+
+If you are having trouble with making the Jovian Plantes row with the gas giants 
+look at the HTML table Basic link (https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics) 
+and look at the rowspan, and scrope. Then go to the HTML table advanced features and accessibility (https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced)
+and look at rowgroup, and row and it will explain it further, let me know if this made sense or if you need help. 
