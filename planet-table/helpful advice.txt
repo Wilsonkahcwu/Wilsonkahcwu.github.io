@@ -1,0 +1,7 @@
+really helpful explain about the row span and coloum span 
+view-source:https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col //talks about col and the span="2"
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+
+then talk about scope
