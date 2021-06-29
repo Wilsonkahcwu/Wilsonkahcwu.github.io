@@ -65,11 +65,75 @@ h1 {
     text-align:center;
 }
 
+h2{
+    font-size: 48rem;
+    letter-spacing: 4rem;
+    font-weight: normal;
+}
+
+h3{
+    font-size: 32rem;
+    font-weight: normal;
+    text-shadow: none;
+    color: #000;
+}
+
+h4{
+    font-size: 24rem;
+    letter-spacing: 4rem;
+    padding-bottom:18rem;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 16rem;
+    margin-top: 4rem;
+    padding: 8rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: normal;
+    text-align: normal;
+}
 /* Section & Paragraph */
+section{
+    margin-top: 18rem;
+}
+
+p{
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    width: 90%;
+    text-align: left;
+}
 
 /* Image & Figure */
-
+img{
+    width:100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800rem;
+}
+figure{
+    margin-bottom: 32rem;
+}
+figcaption{
+    padding-top: 8rem;
+    text-align: right;
+}
 
 
 /* Footer */
+footer{
+    width: 32rem;
+    color: #333;
+    border-style: solid;
+}
 
