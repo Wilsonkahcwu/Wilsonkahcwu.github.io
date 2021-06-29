@@ -1,1 +1,6 @@
-how to do the foreground 
+
+
+if your letters are to big make sure to convert px to rem
+
+its covered here underneath the section font size 
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
