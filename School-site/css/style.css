@@ -95,12 +95,12 @@ header, footer {
 
 /* Typography Styles */
 html{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
 }
 
 h1{
     letter-spacing: 0.125rem;
-    font-family: Josefinslab;
+    font-family: Josefinslab, serif;
     font-size: 3.75rem;
     margin: 1.125rem;
     text-align: center;
@@ -108,7 +108,7 @@ h1{
 
 h2{
     letter-spacing: 0.125rem;
-    font-family: Josefinslab;
+    font-family: Josefinslab, serif;
     font-size: 1.5rem;
 }
 
@@ -154,8 +154,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-
 /* List Styling */
 
 ul{
@@ -177,9 +175,6 @@ ol{
 .long-list a:hover {
     text-transform: uppercase;
 }
-
-
-
 
 /* Navigation Menu */
 
@@ -210,9 +205,6 @@ nav a:active{
     color:#fff;
     background-color: #000;
 }
-
-
-
 
 /* Footer Styles */
 
