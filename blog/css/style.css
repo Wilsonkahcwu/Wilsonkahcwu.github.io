@@ -48,7 +48,7 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-/* font style */
+/* font styles */
 @font-face {
     font-family: ultra-regular;
     src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
@@ -57,9 +57,16 @@
     font-family:josefinslab-regular;
     src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
 }
-/* Styling */
+/* spacing and styling main */
+header,
+section,
+aside,
+footer {
+    margin: 0 1.5% 1.5rem 1.5%;
+}
+
 html {
-    font-size:16px;
+    font-size:1rem;
     font-family: josefinslab-regular, serif;
 }
 
@@ -69,6 +76,7 @@ header {
     left:-10%;
     transform:rotate(-4deg);
     padding-bottom: 3rem;
+    padding-top: 0.2rem;
 }
 
 h1{
@@ -77,6 +85,10 @@ h1{
     text-align: center;
     letter-spacing: 0.30rem;
     font-weight: none;
+}
+
+h2{
+    font-weight: bold;
 }
 
 .highlight{
@@ -105,9 +117,29 @@ a{
     text-decoration: none;
 }
 
-figure{
+.main-section{
     float: left;
+    margin: 0 1.5%;
+    width: 63%;
+
 }
+
+figure{
+    grid-template-columns: auto;
+}
+
+aside{
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+
+footer {
+    clear: both;
+}
+
+
 
 
 
