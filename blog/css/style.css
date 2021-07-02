@@ -48,8 +48,68 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-highlight{
-    
+/* font style */
+@font-face {
+    font-family: ultra-regular;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
 }
+@font-face {
+    font-family:josefinslab-regular;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
+}
+/* Styling */
+html {
+    font-size:16px;
+    font-family: josefinslab-regular, serif;
+}
+
+header {
+    width:110%;
+    top:-10%;
+    left:-10%;
+    transform:rotate(-4deg);
+    padding-bottom: 3rem;
+}
+
+h1{
+    font-family: ultra-regular, serif;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.30rem;
+    font-weight: none;
+}
+
+.highlight{
+    background-color:#800000 ;
+    color: #F0E68C;
+    padding: 0.67rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    text-align: left;
+    list-style-type: none;
+    border-top: .05rem solid #000000;
+    border-bottom: .05rem solid #000000;
+}
+
+li{
+    display: inline-block;
+    padding: 1.25rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+figure{
+    float: left;
+}
+
+
+
 
 
