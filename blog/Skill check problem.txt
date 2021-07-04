@@ -1,0 +1,3 @@
+display flex will have the asied and the section wrap next to each other
+
+
