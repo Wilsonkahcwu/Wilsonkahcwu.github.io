@@ -66,7 +66,8 @@
 html,body{
     font-size:1rem;
     font-family: josefinslab-regular, serif;
-    margin: 0;
+    margin: 0 auto;
+    min-width: 56.25rem;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -164,9 +165,8 @@ h2{
 
 section{
     display: flex;
-    padding-right: 0;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: .15rem;
 }
 
 section p{
@@ -177,12 +177,16 @@ section p{
 
 .article-image{
     float: left;
-    width:35%;
+    width:auto;
+    height: auto;
     padding-right: .2rem;
     padding-bottom: .2rem;
 
 }
 
+article{
+    min-width: 22.5rem;
+}
 
 
 h3{
@@ -238,8 +242,12 @@ figure{
 
 figure img {
     width: 95%;
-    height: 95%;
+    height: auto;
+    max-width: 305px; 
+    max-height: 350px;
     object-fit: cover;
+    margin-left: none;
+    margin-right: none;
 }
 
 figcaption {
@@ -248,7 +256,9 @@ figcaption {
     margin:0;
     background-color:#f5f5dc;
     color:black;
-    width: 89.9%;
+    width: 90%;
+    max-width: 290px; 
+    max-height: 500px;
 }
 
 figcaption a {
@@ -282,7 +292,8 @@ figcaption a {
 footer {
     clear: both;
     padding-top: 7rem;
-    padding-right: 8rem;
+    padding-right: 5rem;
+    padding-left: 1.5rem;
 }
 
 footer p{

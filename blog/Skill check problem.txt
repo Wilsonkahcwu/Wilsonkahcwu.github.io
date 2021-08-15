@@ -1,3 +1,3 @@
-display flex will have the asied and the section wrap next to each other
+I was having trouble where on larger displays, my content would kind of overlap with each other, so to fix this problem, I added a min-width to both the body and the aside that was, and now each section of the page doesn't overlap. 
 
 
