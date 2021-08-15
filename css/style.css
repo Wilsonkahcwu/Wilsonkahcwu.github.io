@@ -1,215 +1,308 @@
-/* General setup */
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
 
-* {
-    box-sizing: border-box;
-}
+        /* 
+        
+        Spacing 
 
-html {
-    font-size:16px;
-}
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
 
-body {
-    margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
-}
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
 
-/* Layout */
+            - letter-spacing, word-spacing, line-height
 
-main {
-    overflow:auto;
-    min-width:45rem;
-    
-}
+            - width, max-width, min-width
+            - height, max-height, min-height
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
-}
+        Typography 
 
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
-}
+            - font-family, font-size, font-style, font-weight
 
-figure img {
-    width:100%;
-    max-width:25rem;
-}
+            - text-decoration, text-align
 
-figcaption {
-    margin:.375rem 0;
-}
+            - color
 
-.long-list {
-    margin-top:0;
-}
+            - text-shadow, text-transform
 
-nav {
-    float: left;
-    width:11.25rem;
-}
+        Box, Layout and Border 
 
-footer {
-    clear: both;
-    margin-top:1.5rem;
-}
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
 
-section, aside, nav, footer {
-    padding: .5rem;
-}
+            - box-shadow
 
-/* header and footer */
+            - display, float, align-items, align-content
 
-header, footer {
-    border-top: .125rem solid #33658A;
-    border-bottom: .125rem solid #33658A;
-}
+            - grid-template-columns, grid-column-gap
 
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
+            - transform
 
-/* NO changes should be made to any of the code above. */
+        Other
 
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
 
 
+/* ------ START WRITING YOUR CODE BELOW ------ */
 
-/* Imported Typfaces */
+/* font styles */
 @font-face {
-    font-family: Josefinslab;
-    src: url(../fonts/josefinslab-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: ultra-regular;
+    src: url(../fonts/serif/ultra-regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:josefinslab-regular;
+    src: url(../fonts/serif/josefinslab-regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url(../fonts/montserrat-regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: opensans-regular;
+    src: url(../fonts/sans-serif/opensans-regular.ttf);
 }
 
+html,body{
+    font-size:1rem;
+    font-family: josefinslab-regular, serif;
+    margin: 0 auto;
+    min-width: 56.25rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 
-/* Typography Styles */
-html{
-    font-family: Montserrat, sans-serif;
 }
 
 h1{
-    letter-spacing: 0.125rem;
-    font-family: Josefinslab, serif;
-    font-size: 3.75rem;
-    margin: 1.125rem;
+    font-family: ultra-regular, serif;
+    font-size: 3rem;
     text-align: center;
+    letter-spacing: 0.30rem;
+    font-weight: none;
+}
+
+h2,h3{
+    font-family: opensans-regular;
+    font-weight: bold;
+}
+
+/*styling the top of the header and nav */
+header {
+    width:110%;
+    top:-10%;
+    left:-10%;
+    transform:rotate(-4deg);
+    padding-bottom: 3rem;
+    padding-top: 0.2rem;
+}
+
+.highlight{
+    background-color:#A52A2A;
+    color: #f5f5dc;
+    padding: 0.67rem;
+    border-radius: 0.75rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 5px 5px 5px #888888;
+    border-top-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+nav {
+    text-align: left;
+    list-style-type: none;
+    border-top: .02rem solid #000000;
+    border-bottom: .05rem solid #000000;
+    font-size: 1.5rem;
+
+}
+
+li{
+    display: inline-block;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #1E90FF;
+    font-size: 125%;
+}
+
+
+li a:hover{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 125%;
+}
+
+.strike{
+    transform: rotate(5deg);
+}
+.strike a{
+    text-decoration: line-through;
+    color:#000000;
+    
+}
+
+
+
+/*styling the main section of the site */
+a{
+    text-decoration: none;
 }
 
 h2{
-    letter-spacing: 0.125rem;
-    font-family: Josefinslab, serif;
-    font-size: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: 1.5rem;
+    font-size: large;
 }
 
-h2 + p {
+section{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: .15rem;
+}
+
+section p{
+    padding-right: 2.5rem;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.article-image{
+    float: left;
+    width:auto;
+    height: auto;
+    padding-right: .2rem;
+    padding-bottom: .2rem;
+
+}
+
+article{
+    min-width: 22.5rem;
+}
+
+
+h3{
     font-size: 0.75rem;
-    letter-spacing: 0.031rem;
-    word-spacing: 0.125rem;
-    text-indent: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
 }
 
-p{
+aside{
+    border-left: solid  thin #505050;
+    padding-left: 2.3rem;
+}
+
+aside p{
     font-size: 0.75rem;
-    letter-spacing: 0.031rem;
-    word-spacing: 0.125rem;
+    padding-bottom: 1.5rem;
+    border-bottom: solid  thin #505050;
+    margin-right: 5.5rem;
+    padding-right: 0rem;
 }
 
-li {
-    font-size: 0.75rem;
-    letter-spacing: 0.031rem;
-    word-spacing: 0.125rem;
+aside img{
+    width:72%;
+    height: auto;
+    margin-right:0;
+    padding-right: 0;
+
 }
 
-figcaption{
-    font-size: 0.75rem;
-    margin-bottom: 2rem;
+.expand{
+    margin-top: 0;
+    font-size: 0.2rem;
+    
 }
 
 
-/* Link Styling */
-a{
-    outline:none;
+/*Image bar*/
+figure{
+    margin: 0;
+    padding: 0;
 }
-
-a:link,
-a:visited {
-    outline:none;
-    color: #33658a;
-}
-
-a:focus,
-a:hover {
-    outline:none;
-    text-decoration: none;
-}
-
-/* List Styling */
-
-ul{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    list-style-type: square;
-}
-
-ol{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    list-style-type: lower-alpha;
-}
-
-.long-list a:hover {
-    text-transform: uppercase;
-}
-
-/* Navigation Menu */
-
-nav{
+.subsection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .0rem;
+    padding-right: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     padding-left: 0;
-    margin-top: 0.25rem;
+    
+
 }
 
-nav a{
-    text-decoration: none;
-    display:inline-block;
-    width: 100%;
-    line-height: 3;
+figure img {
+    width: 95%;
+    height: auto;
+    max-width: 305px; 
+    max-height: 350px;
+    object-fit: cover;
+    margin-left: none;
+    margin-right: none;
+}
+
+figcaption {
+    font-size:.75rem;
+    padding:.5rem;
+    margin:0;
+    background-color:#f5f5dc;
+    color:black;
+    width: 90%;
+    max-width: 290px; 
+    max-height: 500px;
+}
+
+figcaption a {
+    font-size:.75rem;
+    color:#bebebe;
+}
+
+/*styling the btn */
+.btn{
+    font-family: ultra-regular;
+    font-size: medium;
     text-align: center;
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    border: solid 0.063rem;
-    color: #33658A;
+    cursor: pointer;
+    color: #f5f5dc;
+    border: none;
+    padding: 0.67rem;
+    background-color: #000080;
+    border-radius: 0.5rem;
+    text-shadow: none;
+    width: 130px;
+    height: 50px;
+    
 }
 
-nav a:focus,
-nav a:hover{
-    color: #fff;
-    background-color: #33658A;
+.btn:hover{
+    background-color: #0000CD;
 }
 
-nav a:active{
-    color:#fff;
-    background-color: #000;
+
+/* styling the footer*/
+footer {
+    clear: both;
+    padding-top: 7rem;
+    padding-right: 5rem;
+    padding-left: 1.5rem;
 }
 
-/* Footer Styles */
+footer p{
+    float: right;
+    text-align: right;
+}
 
-footer{
-    text-align: center;
+.copyright{
+    float: left;
 }
 
 
